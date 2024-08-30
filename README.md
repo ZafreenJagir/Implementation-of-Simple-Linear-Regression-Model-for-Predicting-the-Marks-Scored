@@ -75,6 +75,12 @@ y_pred
 ![Screenshot 2024-08-30 135244](https://github.com/user-attachments/assets/3297248a-0faf-42a3-98b0-91b55125bfd7)
 
 
+```
+y_test
+```
+
+![Screenshot 2024-08-30 141801](https://github.com/user-attachments/assets/cc77424d-d159-427d-ae74-8c8c1aa78664)
+
 
 ```
 plt.scatter(x_train,y_train,color='black')
