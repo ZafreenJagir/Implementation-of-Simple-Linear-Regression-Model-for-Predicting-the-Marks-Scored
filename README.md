@@ -76,23 +76,54 @@ y_pred
 
 
 
+```
+plt.scatter(x_train,y_train,color='black')
+plt.plot(x_train,regressor.predict(x_train),color='purple')
+plt.title("Hours vs Scores(Training set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
+plt.show()
+```
+
+![Screenshot 2024-08-30 141023](https://github.com/user-attachments/assets/e5f847da-8e80-41d7-8f44-6a288615e527)
+
+```
+plt.scatter(x_test,y_test,color='red')
+plt.plot(x_train,regressor.predict(x_train),color='blue')
+plt.title("Hours vs Scores(Testing set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
+plt.show()
+```
+
+![Screenshot 2024-08-30 141233](https://github.com/user-attachments/assets/2093a1e1-d93f-4067-9261-7e74f80b884a)
+
+
+```
+mse=mean_absolute_error(y_test,y_pred)
+print('MSE = ',mse)
+```
+
+![Screenshot 2024-08-30 141408](https://github.com/user-attachments/assets/8cc1003c-3be6-4350-9390-3f58fd2c9501)
+
+
+```
+mae=mean_absolute_error(y_test,y_pred)
+print('MAE = ',mae)
+```
+
+![Screenshot 2024-08-30 141457](https://github.com/user-attachments/assets/39d3208b-229c-4160-b1d2-275c1f44cda7)
 
 
 
+```
+rmse=np.sqrt(mse)
+print("RMSE= ",rmse)
 
+```
 
+![Screenshot 2024-08-30 141625](https://github.com/user-attachments/assets/0aa4e4d3-6fdd-424a-bb62-aecfec93707f)
 
-
-
-
-
-
-
-
-
-
-## Output:
-![simple linear regression model for predicting the marks scored](sam.png)
 
 
 ## Result:
